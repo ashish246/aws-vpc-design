@@ -61,6 +61,6 @@ jobs:
           name:  test-vpc
           template: aws-vpc-cf.yml
           parameter-overrides: >-
-            CountryCode=${{ github.event.inputs.countryCode }}
-            EnvironmentName=${{ github.event.inputs.envName }}
+            CountryCode=${{ github.event.inputs.countryCode }},
+            EnvironmentName=${{ github.event.inputs.envName }},
             CIDRRange=${{ github.event.inputs.cidrRange }}
